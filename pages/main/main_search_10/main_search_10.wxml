@@ -1,0 +1,45 @@
+<view class="type_content">
+  <import src='../main_templat/main_templat' />
+  <template is='searchTemplate' data="{{placeholder:search.placeholder,onClickSearch:search.onClickSearch}}"></template>
+  <view class="search_content" wx:if="{{showMess}}">
+    <view class="same">
+      <text>省份：</text>
+      <text>{{youMess[0].prov}}</text>
+    </view>
+    <view class="same">
+      <text>90号汽油：</text>
+      <text>{{youMess[0].p90}}</text>
+    </view>
+    <view class="same">
+      <text>93号汽油：</text>
+      <text>{{youMess[0].p93}}</text>
+    </view>
+    <view class="same">
+      <text>97号汽油：</text>
+      <text>{{youMess[0].p97}}</text>
+    </view>
+    <view class="same">
+      <text>0号柴油：</text>
+      <text>{{youMess[0].p0}}</text>
+    </view>
+    <view class="same">
+      <text>89号汽油：</text>
+      <text>{{youMess[0].p89}}</text>
+    </view>
+    <view class="same">
+      <text>92号汽油：</text>
+      <text>{{youMess[0].p92}}</text>
+    </view>
+    <view class="same">
+      <text>95号汽油：</text>
+      <text>{{youMess[0].p95}}</text>
+    </view>
+    <view class="same">
+      <text>98号汽油：</text>
+      <text>{{youMess[0].p98}}</text>
+    </view>
+  </view>
+  <view class="search_content" wx:else>
+    <text class="service_error">{{showapi_res_error}}</text>
+  </view>
+</view>

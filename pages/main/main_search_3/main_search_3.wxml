@@ -1,0 +1,7 @@
+<view class="content">
+  <view class="content_list" wx:for="{{lists}}" wx:key="item">
+    <text class="title">{{item.title}}</text>
+    <rich-text nodes="{{item.text}}" class="contents_list_content"></rich-text>
+  </view>
+  <text>{{loading}}</text>
+</view>

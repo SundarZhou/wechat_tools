@@ -1,0 +1,33 @@
+<view class="type_content">
+  <import src='../main_templat/main_templat' />
+  <template is='searchTemplate' data="{{placeholder:search.placeholder,onClickSearch:search.onClickSearch}}"></template>
+  <view class="search_content" wx:if="{{showMess}}">
+    <view class="same">
+      <text>省份：</text>
+      <text>{{phoneMess.prov}}</text>
+    </view>
+    <view class="same">
+      <text>市级：</text>
+      <text>{{phoneMess.city}}</text>
+    </view>
+    <view class="same">
+      <text>运营商：</text>
+      <text>{{phoneMess.name}}</text>
+    </view>
+    <view class="same">
+      <text>省别编码：</text>
+      <text>{{phoneMess.provCode}}</text>
+    </view>
+    <view class="same">
+      <text>城市编码：</text>
+      <text>{{phoneMess.cityCode}}</text>
+    </view>
+    <view class="same">
+      <text>座机区号：</text>
+      <text>{{phoneMess.areaCode}}</text>
+    </view>
+  </view>
+  <view class="search_content" wx:else>
+    <text class="service_error">{{showapi_res_error}}</text>
+  </view>
+</view>

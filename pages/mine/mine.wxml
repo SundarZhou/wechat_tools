@@ -1,0 +1,22 @@
+<view class="head_login">
+  <button class="head" bindgetuserinfo="onLoginTap" open-type="getUserInfo" disabled="{{disabled}}">
+    <image src="{{head_icon.avatarUrl}}" class="head_img"></image>
+    <text class="click_login">{{head_icon.nickName}}</text>
+  </button>
+</view>
+<view class="mess">
+  <view class="mine_mess" catchtap="toMess">
+    <view class="left">
+      <image src="/images/mess.png"></image>
+      <text>个人资料</text>
+    </view>
+    <image src="/images/right.png"></image>
+  </view>
+  <view class="mine_mess" catchtap="exit">
+    <view class="left">
+      <image src="/images/exit.png"></image>
+      <text>退出登录</text>
+    </view>
+    <image src="/images/right.png"></image>
+  </view>
+</view>

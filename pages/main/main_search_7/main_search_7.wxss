@@ -1,0 +1,6 @@
+/* pages/main/main_search_7/main_search_7.wxss */
+@import "../main_templat/main_templat";
+@import "../../../utils/util";
+page {
+  background-color: #fff;
+}

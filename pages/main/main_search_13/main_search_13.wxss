@@ -1,0 +1,26 @@
+/* pages/main/main_search_13/main_search_13.wxss */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content_list {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  padding: 20rpx;
+  margin: 40rpx 0 0;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #686868;
+}
+
+.type {
+  font-size: 30rpx;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 20rpx;
+  border-bottom: 1px solid #eee;
+  color: #555;
+}

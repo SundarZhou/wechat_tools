@@ -1,0 +1,106 @@
+/* pages/main/main_search_1/main_search_1.wxss */
+
+page {
+  background-color: #fff;
+}
+
+.type_content {
+  padding: 30rpx 40rpx;
+}
+
+.TS_input {
+  width: 70%;
+  font-size: 26rpx;
+  padding: 10rpx 24rpx;
+  background-color: #eee;
+  border-radius: 16px;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search_btn {
+  display: flex;
+  align-items: center;
+  color: #09abf7;
+  margin-right: 20rpx;
+}
+
+.search_img {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 6rpx;
+}
+
+.search_btn text {
+  font-size: 34rpx;
+}
+
+.search_content {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin-top: 60rpx;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  padding: 22rpx;
+  margin-bottom: 20rpx;
+  background-color: #eee;
+  border-radius: 8px;
+}
+
+.content image {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+.content_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30rpx;
+  font-weight: 500;
+  padding: 10rpx 0;
+  color: #686868;
+}
+
+.time {
+  width: 40%;
+  font-size: 24rpx;
+  text-align: right;
+}
+
+.authorDate {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24rpx;
+  color: #686868;
+}
+
+.service_error {
+  text-align: center;
+  font-size: 26rpx;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.show {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  z-index: 99;
+  background-color: #fff;
+}
+
+.hide {
+  display: none;
+}

@@ -1,0 +1,16 @@
+<view class="main">
+  <swiper indicator-dots autoplay circular interval="4000" indicator-color="rgb(110,110,110)" indicator-active-color="rgb(255,255,255)" class="banner">
+    <swiper-item wx:for="{{banner_img}}" wx:key="item">
+      <image src="{{item.src}}" mode="widthFix" data-imgsrc="{{item.src}}" catchtap="bigImg"></image>
+    </swiper-item>
+  </swiper>
+  <view class="GJ_type">
+    <view class="type" wx:for="{{type_item}}" wx:key="item" data-typeId="{{item.id}}" data-typeText="{{item.text}}" catchtap="onClickType">
+      <image src="{{item.src}}" class="type_img"></image>
+      <text class="type_contents">{{item.text}}</text>
+    </view>
+  </view>
+</view>
+<view class="imgshow {{bigImgBool ? 'show' : 'hide'}}" catchtap="hideImg">
+  <image src="{{bigImgSrc}}"></image>
+</view>

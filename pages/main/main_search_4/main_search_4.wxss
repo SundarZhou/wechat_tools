@@ -1,0 +1,60 @@
+/* pages/main/main_search_4/main_search_4.wxss */
+@import "../main_templat/main_templat";
+page {
+  background-color: #fff;
+}
+
+.search_content {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin-top: 60rpx;
+}
+
+.search_content {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin-top: 60rpx;
+}
+
+.search_content_title {
+  font-size: 30rpx;
+  font-weight: 500;
+  color: #686868;
+  text-align: center;
+  padding-bottom: 20rpx;
+  border-bottom: 2px solid #fff;
+}
+
+.content {
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  border-radius: 8px;
+  background-color: #eee;
+}
+
+.allKeyWords {
+  display: flex;
+  flex-direction: column;
+}
+
+.keywords {
+  font-size: 28rpx;
+  color: #686868;
+  padding: 16rpx;
+  border-bottom: 1px solid #fff;
+}
+
+.keywords:last-child {
+  border-bottom: none;
+}
+
+.service_error {
+  text-align: center;
+  font-size: 26rpx;
+  font-weight: 500;
+  color: #1a1a1a;
+}

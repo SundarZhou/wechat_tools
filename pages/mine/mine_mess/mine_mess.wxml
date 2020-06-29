@@ -1,0 +1,26 @@
+<view class="mine_mess">
+  <view class="same">
+    <label>头像</label>
+    <image src="{{mess.avatarUrl}}"></image>
+  </view>
+  <view class="same">
+    <label>昵称</label>
+    <text>{{mess.nickName}}</text>
+  </view>
+  <view class="same">
+    <label>国籍</label>
+    <text>{{mess.country}}</text>
+  </view>
+  <view class="same">
+    <label>省份</label>
+    <text>{{mess.province}}</text>
+  </view>
+  <view class="same">
+    <label>城市</label>
+    <text>{{mess.city}}</text>
+  </view>
+  <view class="same">
+    <label>性别</label>
+    <text>{{mess.gender === '1' ? '男' : '女'}}</text>
+  </view>
+</view>

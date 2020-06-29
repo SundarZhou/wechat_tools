@@ -1,0 +1,22 @@
+<!--pages/main/main_search/main_search.wxml-->
+<view class="type_content">
+  <import src='../main_templat/main_templat' />
+  <template is='searchTemplate' data="{{placeholder:search.placeholder,onClickSearch:search.onClickSearch}}"></template>
+  <view class="search_content" wx:if="{{showMess}}">
+    <view class="content" wx:for="{{result}}" wx:key="item">
+      <text class="content_title">{{item.title}}</text>
+      <view class="content_author">
+        <text>{{item.dynasty}}：</text>
+        <text>{{item.poet}}</text>
+      </view>
+      <text class="content_content" wx:for="{{item.contentlist}}" wx:key="item">{{item.original}}</text>
+      <label class="label_explanation">译文：</label>
+      <text class="content_explanation" wx:for="{{item.contentlist}}" wx:key="item">{{item.translation}}</text>
+      <label class="label_explanation">作者简介：</label>
+      <text class="content_appreciation">{{biography}}</text>
+    </view>
+  </view>
+  <view wx:else class="search_content">
+    <text class="service_error">{{showapi_res_error}}</text>
+  </view>
+</view>

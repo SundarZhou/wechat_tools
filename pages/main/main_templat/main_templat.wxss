@@ -1,0 +1,31 @@
+/* pages/main/main_templat/main_templat.wxss */
+.TS_input {
+  width: 70%;
+  font-size: 26rpx;
+  padding: 10rpx 24rpx;
+  background-color: #eee;
+  border-radius: 16px;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search_btn {
+  display: flex;
+  align-items: center;
+  color: #09abf7;
+  margin-right: 20rpx;
+}
+
+.search_img {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 6rpx;
+}
+
+.search_btn text {
+  font-size: 34rpx;
+}

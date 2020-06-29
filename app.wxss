@@ -1,0 +1,50 @@
+/**app.wxss**/
+page {
+  background-color: #eee;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+.type_content {
+  padding: 30rpx 40rpx;
+}
+
+.question,
+.answer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 0;
+}
+
+.question {
+  font-size: 30rpx;
+  font-weight: 500;
+  border-bottom: 1px solid #eee;
+}
+
+.answer {
+  font-size: 28rpx;
+  font-weight: 500;
+}
+
+.content_list_content {
+  width: 80%;
+  text-align: center;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}

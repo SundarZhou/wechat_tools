@@ -1,0 +1,12 @@
+<view class="content">
+  <view class="content_list" wx:for="{{lists}}" wx:key="item">
+    <view class="question">
+      <text class="title">{{item.question}}</text>
+    </view>
+    <view class="answer" catchtap="showAnswer" data-id="{{index}}">
+      <label>答案</label>
+      <text class="content_list_content {{item.isShow?'show':'hide'}}">{{item.answer}}</text>
+    </view>
+  </view>
+  <text>{{loading}}</text>
+</view>

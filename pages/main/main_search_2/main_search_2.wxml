@@ -1,0 +1,24 @@
+<view class="inputMoney">
+  <view class="country">
+    <label>{{country_money_left}}</label>
+    <input bindblur="changeInput"></input>
+  </view>
+   <view class="country">
+    <label>{{country_money_right}}</label>
+    <input value="{{countryRightValue}}"></input>
+  </view>
+</view>
+<view class="pickerViews">
+  <view class="moneyId">
+    <text>货币代码</text>
+    <text>货币代码</text>
+  </view>
+  <picker-view indicator-style="height: 40px;" bindchange="bindChange" class="pickerView" value="{{value}}">
+    <picker-view-column>
+      <view wx:for="{{country_money}}" class="pickerViewColumn">{{item}}</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{country_money}}" class="pickerViewColumn">{{item}}</view>
+    </picker-view-column>
+  </picker-view>
+</view>

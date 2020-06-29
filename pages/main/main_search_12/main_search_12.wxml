@@ -1,0 +1,89 @@
+<view class="data">
+  <view class="num">
+    <view class="update_time">
+      <text class="title">国内疫情数据</text>
+      <text class="todayUpdate">截至北京时间 {{updateTime}}</text>
+    </view>
+    <view class="confirmedNum same">
+      <view class="confirmedIncr Inc">
+        <text>较昨日</text>
+        <text class="confirmedColor">{{((todayStatictic.curedIncr) + (todayStatictic.deadIncr) - (todayStatictic.confirmedIncr)) > 0 ? '+' + ((todayStatictic.curedIncr) + (todayStatictic.deadIncr) - (todayStatictic.confirmedIncr)) : isNaN((todayStatictic.curedIncr) + (todayStatictic.deadIncr) - (todayStatictic.confirmedIncr)) ? ((todayStatictic.curedIncr) + (todayStatictic.deadIncr) - (todayStatictic.confirmedIncr)) : ''}}</text>
+      </view>
+      <text class="newNum confirmedColor">{{todayStatictic.confirmedNum}}</text>
+      <text>现存确诊</text>
+    </view>
+    <view class="suspectedNum same">
+      <view class="suspectedIncr Inc">
+        <text>较昨日</text>
+        <text class="suspecteColor">{{todayStatictic.suspectedIncr > 0 ? '+' + todayStatictic.suspectedIncr : todayStatictic.suspectedIncr}}</text>
+      </view>
+      <text class="newNum suspecteColor">{{todayStatictic.suspectedNum}}</text>
+      <text>境外输入</text>
+    </view>
+    <view class="seriousNum same">
+      <view class="seriousIncr Inc">
+        <text>较昨日</text>
+        <text class="seriousColor">{{todayStatictic.seriousIncr > 0 ? '+' + todayStatictic.seriousIncr : todayStatictic.seriousIncr}}</text>
+      </view>
+      <text class="newNum seriousColor">{{todayStatictic.seriousNum}}</text>
+      <text>现存重症</text>
+    </view>
+    <view class="allNum same">
+      <view class="confirmedIncr Inc">
+        <text>较昨日</text>
+        <text class="allColor">{{todayStatictic.confirmedIncr > 0 ? '+' + todayStatictic.confirmedIncr : todayStatictic.confirmedIncr}}</text>
+      </view>
+      <text class="newNum allColor">{{todayStatictic.confirmedNum + todayStatictic.deadNum + todayStatictic.curedNum}}</text>
+      <text>累计确诊</text>
+    </view>
+    <view class="deadNum same">
+      <view class="deadIncr Inc">
+        <text>较昨日</text>
+        <text class="deadColor">{{todayStatictic.deadIncr > 0 ? '+' + todayStatictic.deadIncr : todayStatictic.deadIncr}}</text>
+      </view>
+      <text class="newNum deadColor">{{todayStatictic.deadNum}}</text>
+      <text>累计死亡</text>
+    </view>
+    <view class="curedNum same">
+      <view class="curedIncr Inc">
+        <text>较昨日</text>
+        <text class="curedColor">{{todayStatictic.curedIncr > 0 ? '+' + todayStatictic.curedIncr : todayStatictic.curedIncr}}</text>
+      </view>
+      <text class="newNum curedColor">{{todayStatictic.curedNum}}</text>
+      <text>累计治愈</text>
+    </view>
+  </view>
+  <view class="placeData">
+    <view class="placeData_title">
+      <text>国内各地疫情数据</text>
+    </view>
+    <view class="placeData_banner">
+      <text class="place">地区</text>
+      <text>现存确诊</text>
+      <text>累计确诊</text>
+      <text>死亡</text>
+      <text>治愈</text>
+    </view>
+    <view class="content" wx:for="{{todayDetailList}}" data-id="{{index}}" catchtap="showProv" wx:key="item">
+      <view class="placeData_content">
+        <view class="place">
+          <image src="{{item.cityList.length == 0 ? '' : item.img}}" class="small_sj"></image>
+          <text>{{item.provinceName}}</text>
+        </view>
+        <text>{{item.currentConfirmedNum}}</text>
+        <text>{{item.confirmedNum}}</text>
+        <text>{{item.deadNum}}</text>
+        <text>{{item.curedNum}}</text>
+      </view>
+      <view class="{{item.isShow?'show':'hide'}}">
+        <view class="city_content" wx:for="{{item.cityList}}" wx:key="item">
+          <text>{{item.cityName}}</text>
+          <text>{{item.currentConfirmedNum}}</text>
+          <text>{{item.confirmedNum}}</text>
+          <text>{{item.deadNum}}</text>
+          <text>{{item.curedNum}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

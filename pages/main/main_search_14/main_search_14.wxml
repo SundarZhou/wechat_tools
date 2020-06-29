@@ -1,0 +1,16 @@
+<view class="search">
+  <text class="TS_input">{{title}}</text>
+  <view class="search_btn" catchtap="onClickSearchEng">
+    <image src="/images/search.png" class="search_img"></image>
+    <text>搜索</text>
+  </view>
+</view>
+<picker-view indicator-style="height: 50px;" style="width: 100%; height: 400px;" bindchange="bindChange" class="engType">
+  <picker-view-column>
+    <view style="line-height: 50px">请选择类型</view>
+    <view wx:for="{{wordTypeList}}" style="line-height: 50px" wx:key="item">{{item.title}}</view>
+  </picker-view-column>
+  <picker-view-column>
+    <view wx:for="{{childList}}" style="line-height: 50px" wx:key="item">{{item.title}}</view>
+  </picker-view-column>
+</picker-view>

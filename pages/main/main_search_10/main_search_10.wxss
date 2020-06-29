@@ -1,0 +1,12 @@
+@import "../main_templat/main_templat";
+@import "../../../utils/util";
+page {
+  background-color: #fff;
+}
+
+.service_error {
+  text-align: center;
+  font-size: 26rpx;
+  font-weight: 500;
+  color: #1a1a1a;
+}

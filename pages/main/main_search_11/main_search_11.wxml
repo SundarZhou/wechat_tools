@@ -1,0 +1,19 @@
+<view class="price">
+  <view class="price_type">
+    <text>珠宝店</text>
+    <text>金价</text>
+    <text>时间</text>
+  </view>
+  <view class="price_content">
+    <text>{{price.brand}}</text>
+    <text>{{price.goldPrice}}</text>
+    <text>{{price.auLastDate}}</text>
+  </view>
+</view>
+<picker-view indicator-style="height: 50px;" class="gloal_place" bindchange="bindChange">
+  <picker-view-column>
+    <block wx:for="{{gloalPlace}}" wx:key="item">
+      <view style="line-height: 50px">{{item.brand}}</view>
+    </block>
+  </picker-view-column>
+</picker-view>

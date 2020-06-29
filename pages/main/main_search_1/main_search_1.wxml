@@ -1,0 +1,38 @@
+<view class="type_content">
+  <view class="search">
+    <input class="TS_input" placeholder="输入新闻关键词进行搜索" bindinput="getInputText" value="{{value}}"></input>
+    <view class="search_btn" catchtap="onClickSearch1">
+      <image src="/images/search.png" class="search_img"></image>
+      <text>搜索</text>
+    </view>
+  </view>
+  <block wx:if="{{search}}">
+    <view class="search_content" wx:if="{{showMess}}">
+      <view class="content" wx:for="{{result}}" wx:key="item" data-url="{{item.link}}" data-title="{{item.title}}" catchtap="openUrl">
+        <view class="content_title">
+          <text>{{item.title}}</text>
+        </view>
+        <view class="content_img">
+          <block wx:for="{{item.imageurls}}" wx:key="img">
+            <image src="{{item.url}}"></image>
+          </block>
+
+        </view>
+        <view class="authorDate">
+          <text class="content_author">{{item.source}}</text>
+          <text class="content_date">{{item.pubDate}}</text>
+        </view>
+      </view>
+    </view>
+    <view wx:else class="search_content">
+      <text class="service_error">{{showapi_res_error}}</text>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="search_content diff">
+      <view class="type_title" wx:for="{{channelList}}" wx:key="item" data-name="{{item.name}}" catchtap="onchannelList">
+        <text>{{item.name}}</text>
+      </view>
+    </view>
+  </block>
+</view>

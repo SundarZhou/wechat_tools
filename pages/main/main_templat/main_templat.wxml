@@ -1,0 +1,9 @@
+<template name='searchTemplate'>
+  <view class="search">
+    <input class="TS_input" placeholder="{{placeholder}}" bindinput="getInputText"></input>
+    <view class="search_btn" catchtap="{{onClickSearch}}">
+      <image src="/images/search.png" class="search_img"></image>
+      <text>搜索</text>
+    </view>
+  </view>
+</template>

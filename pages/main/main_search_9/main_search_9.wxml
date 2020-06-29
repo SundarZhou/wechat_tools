@@ -1,0 +1,30 @@
+<view class="type_content">
+  <view class="search">
+    <input class="TS_input" placeholder="输入时间进行搜索：0101(月份日期)" bindinput="getInputText" bindfocus="changeTime" value="{{val}}"></input>
+    <view class="search_btn" catchtap="onClickSearch9">
+      <image src="/images/search.png" class="search_img"></image>
+      <text>搜索</text>
+    </view>
+  </view>
+  <view class="search_content" wx:if="{{showMess}}">
+    <view class="content" wx:for="{{history}}" wx:key="item">
+      <view class="content_title">
+        <text>{{item.title}}</text>
+        <label class="time">{{item.year}}-{{item.month > 9 ? item.month : "0" + item.month}}-{{item.day > 9 ? item.day : "0" + item.day}}</label>
+      </view>
+      <image src="{{item.img}}" mode="aspectFit"></image>
+    </view>
+  </view>
+  <view wx:else class="search_content">
+    <text class="service_error">{{showapi_res_error}}</text>
+  </view>
+
+  <picker-view indicator-style="height: 50px;" style="width: 100%; height: 250px;" bindchange="bindChange" class="{{showTime?'show':'hide'}}">
+    <picker-view-column>
+      <view wx:for="{{months}}" style="line-height: 50px">{{item}}月</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{days}}" style="line-height: 50px">{{item}}日</view>
+    </picker-view-column>
+  </picker-view>
+</view>

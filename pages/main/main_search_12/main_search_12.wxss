@@ -1,0 +1,169 @@
+/* pages/main/main_search_12/main_search_12.wxss */
+
+.data {
+  padding-bottom: 30rpx;
+}
+
+.num {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 88%;
+  font-size: 22rpx;
+  font-weight: 600;
+  margin: 40rpx auto;
+  background-color: #fff;
+  border-radius: 8px;
+  color: #686868;
+}
+
+.update_time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 26rpx;
+  border-bottom: 1px solid #eee;
+}
+
+.title {
+  font-size: 30rpx;
+  color: #09abf7;
+}
+
+.todayUpdate {
+  font-size: 22rpx;
+  font-weight: normal;
+}
+
+.newNum {
+  font-size: 40rpx;
+  font-weight: 700;
+  margin: 8rpx auto;
+}
+
+.same {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33.33%;
+  padding: 30rpx 0;
+}
+
+.Inc {
+  font-size: 20rpx;
+  font-weight: normal;
+}
+
+.Inc text:first-child {
+  margin-right: 4rpx;
+}
+
+.confirmedColor {
+  color: #f76809;
+}
+
+.suspecteColor {
+  color: #f7ac09;
+}
+
+.seriousColor {
+  color: #be6d37;
+}
+
+.allColor {
+  color: #92410b;
+}
+
+.deadColor {
+  color: #2d82aa;
+}
+
+.curedColor {
+  color: #2ed897;
+}
+
+.placeData {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 88%;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  color: #686868;
+}
+
+.placeData_title {
+  font-size: 30rpx;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+  color: #09abf7;
+  padding: 26rpx 0;
+  border-bottom: 1px solid #eee;
+}
+
+.placeData_banner, .placeData_content, .city_content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  font-size: 25rpx;
+  padding: 20rpx 0;
+  border-bottom: 1px solid #eee;
+}
+
+.place {
+  position: relative;
+}
+
+.placeData_banner .place, .place, .city_content text:first-child {
+  width: 22%;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.place text {
+  margin-left: 29rpx;
+}
+
+.placeData_banner text, 
+.placeData_content text,
+.city_content text {
+  width: 19.5%;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.placeData_content {
+  font-size: 24rpx;
+}
+
+.small_sj {
+  position: absolute;
+  left: 16rpx;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20rpx;
+  height: 20rpx;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.city_content {
+  background-color: rgba(194, 192, 192, 0.123);
+}

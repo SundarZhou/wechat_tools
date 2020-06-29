@@ -1,0 +1,13 @@
+<view class="word" wx:for="{{wordList}}" wx:key="item">
+  <view class="worName">
+    <text>{{item.name}}</text>
+    <text>{{item.symbol}}</text>
+  </view>
+  <view class="wordType">
+    <text>{{item.desc}}</text>
+    <view catchtap="playAudio" data-src="{{item.sound}}" data-id="{{index}}">
+      <image src="{{item.isShow ? '/images/yy_light.png' : '/images/yy.png'}}" class="audioImg"></image>
+    </view>
+  </view>
+</view>
+<text>{{loading}}</text>

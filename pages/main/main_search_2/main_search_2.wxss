@@ -1,0 +1,44 @@
+/* pages/main/main_search_2/main_search_2.wxss */
+.pickerViews {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 500rpx;
+}
+
+.pickerView {
+  width: 100%;
+  height: 500rpx;
+}
+
+.pickerViewColumn {
+  font-size: 26rpx;
+  line-height: 40px;
+  text-align: center;
+}
+
+.moneyId {
+  display: flex;
+  justify-content: space-around;
+  font-size: 28rpx;
+  padding: 20rpx 0;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.inputMoney {
+  padding: 20rpx;
+  background-color: #fff;
+}
+
+.country {
+  display: flex;
+  justify-content: space-between;
+  font-size: 26rpx;
+  padding: 20rpx;
+
+}
+
+input {
+  text-align: right;
+}

@@ -1,0 +1,45 @@
+<view class="type_content">
+  <import src='../main_templat/main_templat' />
+  <template is='searchTemplate' data="{{placeholder:search.placeholder,onClickSearch:search.onClickSearch}}"></template>
+  <view class="search_content" wx:if="{{showMess}}">
+    <view class="same">
+      <text>ip地址：</text>
+      <text>{{ipMess.ip}}</text>
+    </view>
+    <view class="same">
+      <text>片区：</text>
+      <text>{{ipMess.continents}}</text>
+    </view>
+    <view class="same">
+      <text>国家：</text>
+      <text>{{ipMess.country}}</text>
+    </view>
+    <view class="same">
+      <text>省份：</text>
+      <text>{{ipMess.region}}</text>
+    </view>
+    <view class="same">
+      <text>市级：</text>
+      <text>{{ipMess.city}}</text>
+    </view>
+    <view class="same">
+      <text>区县：</text>
+      <text>{{ipMess.county}}</text>
+    </view>
+    <view class="same">
+      <text>运营商：</text>
+      <text>{{ipMess.isp}}</text>
+    </view>
+    <view class="same">
+      <text>经度：</text>
+      <text>{{ipMess.lnt}}</text>
+    </view>
+    <view class="same">
+      <text>纬度：</text>
+      <text>{{ipMess.lat}}</text>
+    </view>
+  </view>
+  <view class="search_content" wx:else>
+    <text class="service_error">{{showapi_res_error}}</text>
+  </view>
+</view>

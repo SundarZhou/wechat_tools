@@ -1,0 +1,21 @@
+<view class="type_content">
+  <import src='../main_templat/main_templat' />
+  <template is='searchTemplate' data="{{placeholder:search.placeholder,onClickSearch:search.onClickSearch}}"></template>
+  <view class="search_content" wx:if="{{showMess}}">
+    <view class="same">
+      <text>生日：</text>
+      <text>{{cardMess.birthday}}</text>
+    </view>
+    <view class="sex same">
+      <text>性别：</text>
+      <text>{{sex}}</text>
+    </view>
+    <view class="same">
+      <text>身份证所在地：</text>
+      <text>{{cardMess.address}}</text>
+    </view>
+  </view>
+  <view class="search_content" wx:else>
+    <text class="service_error">{{showapi_res_error}}</text>
+  </view>
+</view>

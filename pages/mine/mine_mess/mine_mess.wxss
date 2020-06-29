@@ -1,0 +1,24 @@
+/* pages/mine/mine_mess/mine_mess.wxss */
+.mine_mess {
+  display: flex;
+  flex-direction: column;
+  font-size: 30rpx;
+  font-weight: 500;
+  padding: 0 40rpx;
+  color: #686868;
+  background-color: #fff;
+}
+
+image {
+   width: 90rpx;
+   height: 90rpx;
+   border-radius: 50%;
+}
+
+.same { 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 26rpx 0;
+  border-bottom: 1px solid #eee;
+}

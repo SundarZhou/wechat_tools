@@ -1,0 +1,31 @@
+/* pages/main/main_search_14/wordList/wordList.wxss */
+.word {
+  width: 88%;
+  margin: 40rpx auto 0;
+  padding: 0 40rpx;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.worName {
+  color: #222;
+  border-bottom: 1px solid #eee;
+}
+
+.wordType {
+  font-size: 26rpx;
+  color: #686868;
+}
+
+.worName,.wordType {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40rpx 0;
+}
+
+.audioImg {
+  width: 40rpx;
+  height: 40rpx;
+}

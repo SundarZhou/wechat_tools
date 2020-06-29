@@ -1,0 +1,18 @@
+.search_content {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  font-size: 30rpx;
+  margin-top: 60rpx;
+  padding: 40rpx;
+  background-color: #eee;
+  color: #686868;
+  border-radius: 8px;
+}
+
+.same {
+  display: flex;
+  justify-content: space-between;
+  padding: 10rpx 0;
+}

@@ -1,0 +1,39 @@
+/* pages/main/main_search_14/main_search_14.wxss */
+.TS_input {
+  width: 70%;
+  font-size: 28rpx;
+  padding: 14rpx 24rpx;
+  background-color: #eee;
+  border-radius: 18px;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 40rpx 30rpx;
+}
+
+.search_btn {
+  display: flex;
+  align-items: center;
+  color: #09abf7;
+  margin-right: 20rpx;
+}
+
+.search_img {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 6rpx;
+}
+
+.search_btn text {
+  font-size: 34rpx;
+}
+
+.engType {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}

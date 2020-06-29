@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/main/main",
+    "pages/main/main_templat/main_templat",
+    "pages/main/main_search_0/main_search_0",
+    "pages/main/main_search_1/main_search_1",
+    "pages/main/main_search_1/main_search_url/main_search_url",
+    "pages/main/main_search_2/main_search_2",
+    "pages/main/main_search_3/main_search_3",
+    "pages/main/main_search_4/main_search_4",
+    "pages/main/main_search_5/main_search_5",
+    "pages/main/main_search_6/main_search_6",
+    "pages/main/main_search_7/main_search_7",
+    "pages/main/main_search_8/main_search_8",
+    "pages/main/main_search_9/main_search_9",
+    "pages/main/main_search_10/main_search_10",
+    "pages/main/main_search_11/main_search_11",
+    "pages/main/main_search_12/main_search_12",
+    "pages/main/main_search_13/main_search_13",
+    "pages/main/main_search_14/main_search_14",
+    "pages/main/main_search_14/wordList/wordList",
+    "pages/mine/mine",
+    "pages/mine/mine_mss/mine_mess",
+    "pages/test/test"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#09abf7",
+    "navigationBarTitleText": "哆啦A梦工具袋",
+    "navigationBarTextStyle": "white"
+  },
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "tabBar": {
+    "borderStyle": "black",
+    "color": "#dbdbdb",
+    "selectedColor": "#707070",
+    "list": [
+      {
+        "pagePath": "pages/main/main",
+        "text": "工具",
+        "iconPath": "/images/GJ_01.png",
+        "selectedIconPath": "/images/GJ_02.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "更多",
+        "iconPath": "/images/more_01.png",
+        "selectedIconPath": "/images/more_02.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
+

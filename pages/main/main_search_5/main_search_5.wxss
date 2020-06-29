@@ -1,0 +1,9 @@
+@import "../main_templat/main_templat";
+@import "../../../utils/util";
+page {
+  background-color: #fff;
+}
+
+.sex {
+  margin: 30rpx 0;
+}

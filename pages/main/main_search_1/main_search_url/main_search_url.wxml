@@ -1,0 +1,6 @@
+<!--pages/main/main_search_1/main_search_url/main_search_url.wxml-->
+<!-- <web-view src="{{webUrl}}"></web-view> -->
+<view class="html">
+  <text class="title">{{title}}</text>
+  <rich-text nodes="{{html}}"></rich-text>
+</view>
